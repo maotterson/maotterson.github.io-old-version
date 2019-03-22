@@ -8,17 +8,25 @@ body
 	background-color: white;
 	margin: 0px auto;
 	width: 60%;
-	height: 800px;
+	height: 900px;
 }
 
 ul
 {
 	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 0px;
+	text-align: center;
 }
 
 li
 {
 	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 80px;
+	margin-right: 2px;
+	background-color: #DCDCDC;
 }
 
 h1
@@ -31,15 +39,43 @@ h2
 	text-align: center;
 }
 
-ul
-{
-	margin-left: 0px;
-	padding-left: 0px;
-	text-align: center;
-}
-
 .liActive
 {
 	color: red;
 	font-weight: bold;
+}
+
+section
+{
+	display: none;
+	width: 80%;
+	margin: 0px auto;
+	height: 650px;
+	padding-top: 20px;
+}
+
+#section1
+{
+	background-color: red;
+}
+
+#section2
+{
+	background-color: blue;
+}
+
+#section3
+{
+	background-color: green;
+}
+
+h3
+{
+	color: white;
+	margin-left: 25px;
+}
+
+.sectionActive
+{
+	display: block;
 }

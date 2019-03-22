@@ -13,8 +13,14 @@
 				$("li").mouseenter(
 					function()
 					{
+						$currentTab = $(this);
+						$currentSection = $("#section" + $currentTab.attr("id"));
+						
 						$("li").removeClass("liActive");
-						$(this).addClass("liActive");
+						$currentTab.addClass("liActive");
+						
+						$("section").removeClass("sectionActive");
+						$currentSection.addClass("sectionActive");
 					}
 				);
 			}
@@ -26,10 +32,19 @@
 		<h1>Test</h1>
 		<h2>This is a test page</h2>
 		<ul>
-			<li>Test</li>
-			<li>Test</li>
-			<li>Test</li>
+			<li id="1">Test 1</li>
+			<li id="2">Test 2</li>
+			<li id="3">Test 3</li>
 		</ul>
+		<section id="section1">
+			<h3>Test 1</h3>
+		</section>
+		<section id="section2">
+			<h3>Test 2</h3>
+		</section>
+		<section id="section3">
+			<h3>Test 3</h3>
+		</section>
 	</div>
 </body>
 </html>
