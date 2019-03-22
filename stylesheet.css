@@ -41,8 +41,8 @@ h2
 
 .liActive
 {
-	color: red;
 	font-weight: bold;
+	background-color: #D3D3D3;
 }
 
 section
