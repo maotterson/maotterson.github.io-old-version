@@ -1,6 +1,13 @@
 body
 {
 	background-color: black;
+	font-family: helvetica;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
 }
 
 #container
@@ -9,6 +16,12 @@ body
 	margin: 0px auto;
 	width: 60%;
 	height: 900px;
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 100%;
+  }
 }
 
 ul
@@ -31,6 +44,8 @@ li
 
 h1
 {
+	
+	margin-top: 0px;
 	text-align: center;
 }
 
@@ -52,27 +67,24 @@ section
 	margin: 0px auto;
 	height: 650px;
 	padding-top: 20px;
+	background-repeat: no-repeat;
+	background-size: cover;  
+	background-attachment: fixed;
+	overflow-y: scroll;
+	background-position: center;
 }
 
-#section1
+section p
 {
-	background-color: red;
-}
-
-#section2
-{
-	background-color: blue;
-}
-
-#section3
-{
-	background-color: green;
+	margin-left: 25px;
+	font-size: 24px;
 }
 
 h3
 {
 	color: white;
 	margin-left: 25px;
+	font-size: 36px;
 }
 
 .sectionActive
