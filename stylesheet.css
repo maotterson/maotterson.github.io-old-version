@@ -30,6 +30,7 @@ h3
 	padding: 240px 20px;
 	background-image: url("images/stadium5.jpg");
 	background-attachment: fixed;
+	background-position: left;
 }
 
 .container

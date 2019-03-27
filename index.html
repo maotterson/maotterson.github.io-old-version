@@ -7,9 +7,56 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<link type="text/css"  rel="stylesheet" href="stylesheet.css">
+	<script>
+	
+		$(function()
+		{
+		
+			var ltr = true;
+			ttb = true;
+			var x = 1600;
+			var y = 0;
+			setInterval(
+				function()
+				{
+						if(ltr == false)
+						{
+							x-=0.5;
+							//see if the boundary is reached
+							if(x==1500)
+							{
+								ltr=true;
+							}
+						}
+						else if(ltr == true)
+						{
+							x+=0.5;
+							if(x==2000)
+							{
+								ltr=false;
+							}
+						}
+						if(ttb == true)
+						{
+							y+=0.25;
+							if(y==50)
+							{
+								ttb=false;
+							}
+						}
+						else if(ttb == false)
+						{
+							y-=0.25;
+							if(y==-250)
+							{
+								ttb=true;
+							}
+						}
+						$('#jumbotron').css('background-position', x + 'px ' + y + 'px');		
+				}, 60);
+		})
+	</script>
 	<title>Mark Otterson</title>
-	
-	
 </head>
 <body>
 	<nav class="bg-white navbar navbar-default navbar-fixed-top">
@@ -23,7 +70,7 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="jumbotron text-center fg-white">
+	<div id="jumbotron" class="jumbotron text-center fg-white">
 		<div class="container opaque">
 			<h1>Mark Otterson</h1>
 			<h3>Software/Web Development</h3> 
