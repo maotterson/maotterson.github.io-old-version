@@ -1,87 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test Page</title>
-	<link type="text/css"  rel="stylesheet" href="stylesheet.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(
-			function()
-			{
-				//mouse over tab
-				$("li").mouseenter(
-					function()
-					{
-						$currentTab = $(this);
-						$currentSection = $("#section" + $currentTab.attr("id"));
-						
-						$("li").removeClass("liActive");
-						$currentTab.addClass("liActive");
-						
-						$("section").removeClass("sectionActive");
-						$currentSection.addClass("sectionActive");
-
-						switch($currentTab.attr("id"))
-						{
-							case '1':
-								$(".sectionActive").css("background-image","url('images/clouds.jpg')");
-								$(".sectionActive").css("color","red");
-								break;
-							case '2':
-								$(".sectionActive").css("background-image","url('images/forest.jpg')");
-								$(".sectionActive").css("color","orange");
-								break;
-							case '3':
-								$(".sectionActive").css("background-image","url('images/space.jpg')");
-								$(".sectionActive").css("color","yellow");
-								break;
-						}
-					}
-				);
-			}
-		);
-	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link type="text/css"  rel="stylesheet" href="stylesheet.css">
+	<title>Mark Otterson</title>
+	
+	
 </head>
 <body>
-	<div id="container">
-		<h1>Test</h1>
-		<h2>This is a test page</h2>
-		<ul>
-			<li id="1">Test 1</li>
-			<li id="2">Test 2</li>
-			<li id="3">Test 3</li>
-		</ul>
-		<section id="section1">
-			<h3>Test 1</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut faucibus purus. Aliquam ullamcorper at urna eget sagittis. Maecenas at magna mi. Duis sit amet felis dapibus neque venenatis mollis at eget lorem. Nullam commodo ex libero, sit amet fermentum felis convallis sit amet. Etiam ultricies, nisi et auctor luctus, enim libero auctor sapien, eu consequat magna lectus eget leo. Sed volutpat, urna at aliquam luctus, lacus tellus accumsan dui, vel aliquet purus velit vitae purus. Nulla suscipit augue at mattis ornare. Nam sed ornare purus. Aliquam faucibus iaculis quam. Praesent lobortis consectetur sem, in fermentum felis elementum vitae. Curabitur semper mi non purus vestibulum, vel gravida sapien placerat.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut faucibus purus. Aliquam ullamcorper at urna eget sagittis. Maecenas at magna mi. Duis sit amet felis dapibus neque venenatis mollis at eget lorem. Nullam commodo ex libero, sit amet fermentum felis convallis sit amet. Etiam ultricies, nisi et auctor luctus, enim libero auctor sapien, eu consequat magna lectus eget leo. Sed volutpat, urna at aliquam luctus, lacus tellus accumsan dui, vel aliquet purus velit vitae purus. Nulla suscipit augue at mattis ornare. Nam sed ornare purus. Aliquam faucibus iaculis quam. Praesent lobortis consectetur sem, in fermentum felis elementum vitae. Curabitur semper mi non purus vestibulum, vel gravida sapien placerat.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut faucibus purus. Aliquam ullamcorper at urna eget sagittis. Maecenas at magna mi. Duis sit amet felis dapibus neque venenatis mollis at eget lorem. Nullam commodo ex libero, sit amet fermentum felis convallis sit amet. Etiam ultricies, nisi et auctor luctus, enim libero auctor sapien, eu consequat magna lectus eget leo. Sed volutpat, urna at aliquam luctus, lacus tellus accumsan dui, vel aliquet purus velit vitae purus. Nulla suscipit augue at mattis ornare. Nam sed ornare purus. Aliquam faucibus iaculis quam. Praesent lobortis consectetur sem, in fermentum felis elementum vitae. Curabitur semper mi non purus vestibulum, vel gravida sapien placerat.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut faucibus purus. Aliquam ullamcorper at urna eget sagittis. Maecenas at magna mi. Duis sit amet felis dapibus neque venenatis mollis at eget lorem. Nullam commodo ex libero, sit amet fermentum felis convallis sit amet. Etiam ultricies, nisi et auctor luctus, enim libero auctor sapien, eu consequat magna lectus eget leo. Sed volutpat, urna at aliquam luctus, lacus tellus accumsan dui, vel aliquet purus velit vitae purus. Nulla suscipit augue at mattis ornare. Nam sed ornare purus. Aliquam faucibus iaculis quam. Praesent lobortis consectetur sem, in fermentum felis elementum vitae. Curabitur semper mi non purus vestibulum, vel gravida sapien placerat.</p>
-		</section>
-		<section id="section2">
-			<h3>Test 2</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut faucibus purus. Aliquam ullamcorper at urna eget sagittis. Maecenas at magna mi. Duis sit amet felis dapibus neque venenatis mollis at eget lorem. Nullam commodo ex libero, sit amet fermentum felis convallis sit amet. Etiam ultricies, nisi et auctor luctus, enim libero auctor sapien, eu consequat magna lectus eget leo. Sed volutpat, urna at aliquam luctus, lacus tellus accumsan dui, vel aliquet purus velit vitae purus. Nulla suscipit augue at mattis ornare. Nam sed ornare purus. Aliquam faucibus iaculis quam. Praesent lobortis consectetur sem, in fermentum felis elementum vitae. Curabitur semper mi non purus vestibulum, vel gravida sapien placerat.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut faucibus purus. Aliquam ullamcorper at urna eget sagittis. Maecenas at magna mi. Duis sit amet felis dapibus neque venenatis mollis at eget lorem. Nullam commodo ex libero, sit amet fermentum felis convallis sit amet. Etiam ultricies, nisi et auctor luctus, enim libero auctor sapien, eu consequat magna lectus eget leo. Sed volutpat, urna at aliquam luctus, lacus tellus accumsan dui, vel aliquet purus velit vitae purus. Nulla suscipit augue at mattis ornare. Nam sed ornare purus. Aliquam faucibus iaculis quam. Praesent lobortis consectetur sem, in fermentum felis elementum vitae. Curabitur semper mi non purus vestibulum, vel gravida sapien placerat.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut faucibus purus. Aliquam ullamcorper at urna eget sagittis. Maecenas at magna mi. Duis sit amet felis dapibus neque venenatis mollis at eget lorem. Nullam commodo ex libero, sit amet fermentum felis convallis sit amet. Etiam ultricies, nisi et auctor luctus, enim libero auctor sapien, eu consequat magna lectus eget leo. Sed volutpat, urna at aliquam luctus, lacus tellus accumsan dui, vel aliquet purus velit vitae purus. Nulla suscipit augue at mattis ornare. Nam sed ornare purus. Aliquam faucibus iaculis quam. Praesent lobortis consectetur sem, in fermentum felis elementum vitae. Curabitur semper mi non purus vestibulum, vel gravida sapien placerat.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut faucibus purus. Aliquam ullamcorper at urna eget sagittis. Maecenas at magna mi. Duis sit amet felis dapibus neque venenatis mollis at eget lorem. Nullam commodo ex libero, sit amet fermentum felis convallis sit amet. Etiam ultricies, nisi et auctor luctus, enim libero auctor sapien, eu consequat magna lectus eget leo. Sed volutpat, urna at aliquam luctus, lacus tellus accumsan dui, vel aliquet purus velit vitae purus. Nulla suscipit augue at mattis ornare. Nam sed ornare purus. Aliquam faucibus iaculis quam. Praesent lobortis consectetur sem, in fermentum felis elementum vitae. Curabitur semper mi non purus vestibulum, vel gravida sapien placerat.</p>
-		</section>
-		<section id="section3">
-			<h3>Test 3</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut faucibus purus. Aliquam ullamcorper at urna eget sagittis. Maecenas at magna mi. Duis sit amet felis dapibus neque venenatis mollis at eget lorem. Nullam commodo ex libero, sit amet fermentum felis convallis sit amet. Etiam ultricies, nisi et auctor luctus, enim libero auctor sapien, eu consequat magna lectus eget leo. Sed volutpat, urna at aliquam luctus, lacus tellus accumsan dui, vel aliquet purus velit vitae purus. Nulla suscipit augue at mattis ornare. Nam sed ornare purus. Aliquam faucibus iaculis quam. Praesent lobortis consectetur sem, in fermentum felis elementum vitae. Curabitur semper mi non purus vestibulum, vel gravida sapien placerat.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut faucibus purus. Aliquam ullamcorper at urna eget sagittis. Maecenas at magna mi. Duis sit amet felis dapibus neque venenatis mollis at eget lorem. Nullam commodo ex libero, sit amet fermentum felis convallis sit amet. Etiam ultricies, nisi et auctor luctus, enim libero auctor sapien, eu consequat magna lectus eget leo. Sed volutpat, urna at aliquam luctus, lacus tellus accumsan dui, vel aliquet purus velit vitae purus. Nulla suscipit augue at mattis ornare. Nam sed ornare purus. Aliquam faucibus iaculis quam. Praesent lobortis consectetur sem, in fermentum felis elementum vitae. Curabitur semper mi non purus vestibulum, vel gravida sapien placerat.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut faucibus purus. Aliquam ullamcorper at urna eget sagittis. Maecenas at magna mi. Duis sit amet felis dapibus neque venenatis mollis at eget lorem. Nullam commodo ex libero, sit amet fermentum felis convallis sit amet. Etiam ultricies, nisi et auctor luctus, enim libero auctor sapien, eu consequat magna lectus eget leo. Sed volutpat, urna at aliquam luctus, lacus tellus accumsan dui, vel aliquet purus velit vitae purus. Nulla suscipit augue at mattis ornare. Nam sed ornare purus. Aliquam faucibus iaculis quam. Praesent lobortis consectetur sem, in fermentum felis elementum vitae. Curabitur semper mi non purus vestibulum, vel gravida sapien placerat.</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut faucibus purus. Aliquam ullamcorper at urna eget sagittis. Maecenas at magna mi. Duis sit amet felis dapibus neque venenatis mollis at eget lorem. Nullam commodo ex libero, sit amet fermentum felis convallis sit amet. Etiam ultricies, nisi et auctor luctus, enim libero auctor sapien, eu consequat magna lectus eget leo. Sed volutpat, urna at aliquam luctus, lacus tellus accumsan dui, vel aliquet purus velit vitae purus. Nulla suscipit augue at mattis ornare. Nam sed ornare purus. Aliquam faucibus iaculis quam. Praesent lobortis consectetur sem, in fermentum felis elementum vitae. Curabitur semper mi non purus vestibulum, vel gravida sapien placerat.</p>
-		</section>
+	<nav class="bg-white navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Mark Otterson</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#" data-toggle="modal" data-target="#aboutmeModal">About Me</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#resumeModal">Resume</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="jumbotron text-center fg-white">
+		<div class="container opaque">
+			<h1>Mark Otterson</h1>
+			<h3>Software/Web Development</h3> 
+		</div>
 	</div>
+	<div class="modal fade" id="resumeModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+					<header class="header-resume">
+						<h1 class="h1-resume"><strong>MARK OTTERSON</strong></h1>
+						<p class="h6-resume"><a class="a-resume" href="mailto:otterson.2@gmail.com">otterson.2@gmail.com</a></h1>
+					</header>
+					<h2 class="h2-resume">OBJECTIVE</h2>
+					<p class="p-resume"><strong>Seeking an entry-level opportunity to grow my skills as a software and web developer</strong></p>
+					<h2 class="h2-resume">TECHNICAL SKILLS</h2>
+					<ul class="ul-resume">
+						<li><p class="p-resume"><strong>Application/Software Development</strong> (C#, Java, C++)</p></li>
+						<li><p class="p-resume"><strong>Server-side Technologies</strong> (ASP.NET, PHP, AJAX requests)</p></li>
+						<li><p class="p-resume"><strong>Client-side Technologies</strong> (JavaScript/jQuery, HTML, CSS)</p></li>
+						<li><p class="p-resume"><strong>Database design & normalization experience with Access and SQL</strong></p></li>
+						<li><p class="p-resume"><strong>Extensive experience using Microsoft Office suite</strong> (Word, Excel, Visio)</p></li>
+						<li><p class="p-resume"><strong>Accounting, marketing, business operations and management coursework in attaining business minor.</strong></p></li>
+					</ul>
+					<h2 class="h2-resume">EDUCATION</h2>
+					<h3 class="h3-resume"><strong>The Ohio State University, Columbus, OH</strong>.................................................September 2006--June 2011</h3>
+					<h4 class="h4-resume"><em>B.S. Mechanical Engineering, Minor: General Business</em></h4>
+					<p class="p-resume">Projects included designing and implementing a real-time home power consumption monitoring device in an apartment using Arduino.</p>
+					<p class="p-resume">Overall GPA (4.0 scale): 3.31</p>
+
+					<h3 class="h3-resume"><strong>Lorain County Community College, Elyria, OH</strong>................................................January 2018—Present</h3>
+					<h4 class="h4-resume"><em>Web Programming & Software Development Fundamentals Certificates</em></h4>
+					<p class="p-resume">Projects included designing a database-driven website with ASP.NET, AJAX and C# code-behind that evaluated fantasy football trades.</p>
+					<p class="p-resume">Overall GPA (4.0 scale): 4.00</p>
+					
+					<h2 class="h2-resume">WORK EXPERIENCE</h2>
+					<h3 class="h3-resume"><strong>Lorain County Community College – Academic Support Center, Elyria, OH</strong></h3>
+					<h4 class="h4-resume">Professional Tutor (January 2019—Present)</h4>
+					<ul class="ul-resume">
+						<li><p class="p-resume">Assist students on a walk-in basis with coursework for Computer Information Systems classes</p></li>
+						<li><p class="p-resume">Primarily assist with coursework pertaining to concepts in object-oriented programming, scripting in the client-server environment, and database design (C#, Java, ASP.NET, JavaScript, PHP, AJAX, SQL)</p></li>
+						<li><p class="p-resume">Also provide tutoring for math and statistics coursework in the college’s Math Studio</p></li>
+					</ul>
+					<h3 class="h3-resume"><strong>Playcreations Equipment, LLC, Avon Lake, OH</strong></h3>
+					<h4 class="h4-resume">Installer (August 2010, June—August 2011)</h4>
+					<ul class="ul-resume">
+						<li><p class="p-resume">Frequently handled multiple assembly tasks at a time</p></li>
+						<li><p class="p-resume">Constantly working to meet installation deadlines</p></li>
+						<li><p class="p-resume">Labor intensive-work that often required working extended hours and making long commutes</p></li>
+					</ul>
+					<footer class="footer-resume"><a class="a-resume" href="resume.pdf"><strong>PDF Version</strong></footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
-</html>

@@ -1,93 +1,142 @@
 body
 {
-	background-color: black;
-	font-family: helvetica;
-
-}
-
-::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
-
-#container
-{
-	background-color: white;
-	margin: 0px auto;
-	width: 60%;
-	height: 900px;
-}
-
-@media only screen and (max-width: 600px) {
-  #container {
-    width: 100%;
-  }
-}
-
-ul
-{
-	list-style-type: none;
-	margin-left: 0px;
-	padding-left: 0px;
-	text-align: center;
-}
-
-li
-{
-	display: inline-block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 80px;
-	margin-right: 2px;
-	background-color: #DCDCDC;
-}
-
-h1
-{
-	
-	margin-top: 0px;
-	text-align: center;
-}
-
-h2
-{
-	text-align: center;
-}
-
-.liActive
-{
-	font-weight: bold;
-	background-color: #D3D3D3;
-}
-
-section
-{
-	display: none;
-	width: 80%;
-	margin: 0px auto;
-	height: 650px;
-	padding-top: 20px;
-	background-repeat: no-repeat;
-	background-size: cover;  
-	background-attachment: fixed;
-	overflow-y: scroll;
-	background-position: center;
-}
-
-section p
-{
-	margin-left: 25px;
-	font-size: 24px;
+	font-family: 'Quicksand', sans-serif;
 }
 
 h3
 {
-	color: white;
-	margin-left: 25px;
-	font-size: 36px;
+	color: #e6e6e6;
 }
 
-.sectionActive
+.fg-white
 {
-	display: block;
+	color: white;
+}
+
+.bg-grey
+{
+	background-color: #f2f2f2;
+	color: red;
+}
+
+.bg-white
+{
+	background-color: white;
+	color: black;
+}
+
+.jumbotron
+{
+	padding: 240px 20px;
+	background-image: url("images/stadium5.jpg");
+	background-attachment: fixed;
+}
+
+.container
+{
+	padding: 120px 20px;
+}
+
+.logo
+{
+	font-size: 126px;
+	color: #bb0000;
+}
+
+.topic
+{
+	text-align: left;
+}
+
+.navbar-default
+{
+	color: white;
+}
+
+/* Modal resume style */
+.modal-dialog 
+{ 
+	margin: 5px auto;
+	width: 850px;
+}
+
+.modal-body
+{
+	padding-left: 50px;
+	padding-right: 50px
+}
+
+
+.header-resume
+{
+	text-align: right;
+}
+
+.h1-resume
+{
+	font-family: Century Gothic;
+	font-size: 36px;
+	color: black;
+	margin-bottom: 3px;
+}
+
+.h2-resume
+{
+	font-family: Century Gothic;
+	font-size: 20px;
+	color: rgb(114, 20, 17);
+	border-bottom-style: solid;
+	margin-bottom: 5px;
+}
+
+.h3-resume
+{
+	font-family: Century Gothic;
+	font-size: 16px;
+	color: rgb(171, 20, 17);
+	margin-bottom: 2px;
+}
+
+.h4-resume
+{
+	margin-top: 3px;
+	font-family: Century Gothic;
+	font-size: 14px;
+	color: rgb(171, 20, 17);
+}
+
+.h6-resume
+{
+	font-family: Century Gothic;
+	font-size: 16px;
+	margin-top: 0px;
+}
+
+.p-resume
+{
+	font-family: Century Gothic;
+	font-size: 14px;
+	margin-bottom: 4px;
+}
+
+.ul-resume
+{
+	margin-left: 0px;
+	padding-left: 15px;
+}
+
+.a-resume
+{
+	color: rgb(114, 20, 17);
+}
+
+.a-resume:hover
+{
+	color: black;
+}
+
+.footer-resume
+{
+	margin-top: 25px;
+	text-align: center;
 }
