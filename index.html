@@ -2,11 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<link type="text/css"  rel="stylesheet" href="stylesheet.css">
+	<link type="text/css"  rel="stylesheet" href="mobile.css" media='screen and (max-device-width: 480px)' >
 	<script>
 	
 		$(function()
@@ -65,7 +67,7 @@
 				<a class="navbar-brand" href="#">Mark Otterson</a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#" data-toggle="modal" data-target="#aboutmeModal">About Me</a></li>
+				<li><a href="#" data-toggle="modal" data-target="#portfolioModal">Portfolio</a></li>
 				<li><a href="#" data-toggle="modal" data-target="#resumeModal">Resume</a></li>
 			</ul>
 		</div>
@@ -121,10 +123,23 @@
 						<li><p class="p-resume">Constantly working to meet installation deadlines</p></li>
 						<li><p class="p-resume">Labor intensive-work that often required working extended hours and making long commutes</p></li>
 					</ul>
-					<footer class="footer-resume"><a class="a-resume" href="resume.pdf"><strong>PDF Version</strong></footer>
+					<div class="footer-resume"><a class="a-resume" href="resume.pdf"><strong>PDF Version</strong></a>
+					</div>
         </div>
       </div>
     </div>
   </div>
-
+	
+	<div class="modal fade" id="portfolioModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer class="page-footer text-center">Page Created by Mark Otterson
+	</footer>
 </body>
+</html>
