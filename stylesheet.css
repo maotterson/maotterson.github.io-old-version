@@ -61,6 +61,11 @@ h3
 	width: 850px;
 }
 
+.modal-wider
+{ 
+	width: 80%;
+}
+
 .modal-body
 {
 	padding-left: 50px;
@@ -140,4 +145,10 @@ h3
 {
 	margin-top: 25px;
 	text-align: center;
+}
+
+.item
+{
+	height: 800px;
+	background-color: green;
 }
