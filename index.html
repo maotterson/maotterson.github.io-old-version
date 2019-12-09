@@ -1,181 +1,77 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-	<link type="text/css"  rel="stylesheet" href="stylesheet.css">
-	<link type="text/css"  rel="stylesheet" href="mobile.css" media='screen and (max-device-width: 480px)' >
-	<script>
-	
-		$(function()
-		{
-		
-			var ltr = true;
-			ttb = true;
-			var x = 2000;
-			var y = 0;
-			setInterval(
-				function()
-				{
-						if(ltr == false)
-						{
-							x-=0.5;
-							//see if the boundary is reached
-							if(x==1800)
-							{
-								ltr=true;
-							}
-						}
-						else if(ltr == true)
-						{
-							x+=0.5;
-							if(x==2200)
-							{
-								ltr=false;
-							}
-						}
-						if(ttb == true)
-						{
-							y+=0.25;
-							if(y==50)
-							{
-								ttb=false;
-							}
-						}
-						else if(ttb == false)
-						{
-							y-=0.25;
-							if(y==-250)
-							{
-								ttb=true;
-							}
-						}
-						$('#jumbotron').css('background-position', x + 'px ' + y + 'px');		
-				}, 60);
-		});
-	</script>
-	<title>Mark Otterson - Portfolio</title>
-</head>
-<body>
-	<nav class="bg-white navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand">Mark Otterson</a>
-			</div>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#" data-toggle="modal" data-target="#portfolioModal">Portfolio</a></li>
-				<li><a href="#" data-toggle="modal" data-target="#resumeModal">Resume</a></li>
-			</ul>
-		</div>
-	</nav>
-	<div id="jumbotron" class="jumbotron text-center fg-white">
-		<div class="container opaque">
-			<h1>Mark Otterson</h1>
-			<h3>Software/Web Development</h3> 
-		</div>
-	</div>
-	<div class="modal fade" id="resumeModal" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-					<header class="header-resume">
-						<h1 class="h1-resume"><strong>MARK OTTERSON</strong></h1>
-						<p class="h6-resume"><a class="a-resume" href="mailto:otterson.2@gmail.com">otterson.2@gmail.com</a></h1>
-					</header>
-					<h2 class="h2-resume">OBJECTIVE</h2>
-					<p class="p-resume"><strong>Seeking an entry-level opportunity to grow my skills as a software and web developer</strong></p>
-					<h2 class="h2-resume">TECHNICAL SKILLS</h2>
-					<ul class="ul-resume">
-						<li><p class="p-resume"><strong>Application/Software Development</strong> (C#, Java, C++)</p></li>
-						<li><p class="p-resume"><strong>Server-side Technologies</strong> (ASP.NET, PHP, AJAX requests)</p></li>
-						<li><p class="p-resume"><strong>Client-side Technologies</strong> (JavaScript/jQuery, HTML, CSS)</p></li>
-						<li><p class="p-resume"><strong>Database design & normalization experience with Access and SQL</strong></p></li>
-						<li><p class="p-resume"><strong>Extensive experience using Microsoft Office suite</strong> (Word, Excel, Visio)</p></li>
-						<li><p class="p-resume"><strong>Accounting, marketing, business operations and management coursework in attaining business minor.</strong></p></li>
-					</ul>
-					<h2 class="h2-resume">EDUCATION</h2>
-					<h3 class="h3-resume"><strong>The Ohio State University, Columbus, OH</strong>.................................................September 2006--June 2011</h3>
-					<h4 class="h4-resume"><em>B.S. Mechanical Engineering, Minor: General Business</em></h4>
-					<p class="p-resume">Projects included designing and implementing a real-time home power consumption monitoring device in an apartment using Arduino.</p>
-					<p class="p-resume">Overall GPA (4.0 scale): 3.31</p>
+    <body>
+        <div id="map"></div>
+    </body>
+    <!-- Replace the value of the key parameter with your own API key. -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?&callback=initMap"></script>
+    <script>
+        var map, infoWindow;
 
-					<h3 class="h3-resume"><strong>Lorain County Community College, Elyria, OH</strong>................................................January 2018—Present</h3>
-					<h4 class="h4-resume"><em>Web Programming & Software Development Fundamentals Certificates</em></h4>
-					<p class="p-resume">Projects included designing a database-driven website with ASP.NET, AJAX and C# code-behind that evaluated fantasy football trades.</p>
-					<p class="p-resume">Overall GPA (4.0 scale): 4.00</p>
-					
-					<h2 class="h2-resume">WORK EXPERIENCE</h2>
-					<h3 class="h3-resume"><strong>Lorain County Community College – Academic Support Center, Elyria, OH</strong></h3>
-					<h4 class="h4-resume">Professional Tutor (January 2019—Present)</h4>
-					<ul class="ul-resume">
-						<li><p class="p-resume">Assist students on a walk-in basis with coursework for Computer Information Systems classes</p></li>
-						<li><p class="p-resume">Primarily assist with coursework pertaining to concepts in object-oriented programming, scripting in the client-server environment, and database design (C#, Java, ASP.NET, JavaScript, PHP, AJAX, SQL)</p></li>
-						<li><p class="p-resume">Also provide tutoring for math and statistics coursework in the college’s Math Studio</p></li>
-					</ul>
-					<h3 class="h3-resume"><strong>Playcreations Equipment, LLC, Avon Lake, OH</strong></h3>
-					<h4 class="h4-resume">Installer (August 2010, June—August 2011)</h4>
-					<ul class="ul-resume">
-						<li><p class="p-resume">Frequently handled multiple assembly tasks at a time</p></li>
-						<li><p class="p-resume">Constantly working to meet installation deadlines</p></li>
-						<li><p class="p-resume">Labor intensive-work that often required working extended hours and making long commutes</p></li>
-					</ul>
-					<div class="footer-resume"><a class="a-resume" href="resume.pdf"><strong>PDF Version</strong></a>
-					</div>
-        </div>
-      </div>
-    </div>
-  </div>
-	
-	<div class="modal fade" id="portfolioModal" role="dialog">
-		<div class="modal-wider modal-dialog">
-			<div class="modal-content">
-				<div class="modal-body">
-					<h1 class="text-center">Portfolio</h1>
-					<div class="container-fluid">
-						<div id="portfolioCarousel" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators">
-								<li data-target="#portfolioCarousel" data-slide-to="0" class="active"></li>
-								<li data-target="#portfolioCarousel" data-slide-to="1"></li>
-								<li data-target="#portfolioCarousel" data-slide-to="2"></li>
-							</ol>
-							<div class="carousel-inner">
-								<div class="item active">
-									<div class="carousel-caption">
-										<h3>Coming soon...</h3>
-										<p>Coming soon...</p>
-									</div>
-								</div>
-								<div class="item">
-									<div class="carousel-caption">
-										<h3>Coming soon...</h3>
-										<p>Coming soon...</p>
-									</div>
-								</div>
-								<div class="item">
-									<div class="carousel-caption">
-										<h3>Coming soon...</h3>
-										<p>Coming soon...</p>
-									</div>
-								</div>
-							</div>
-							<a class="left carousel-control" href="#portfolioCarousel" data-slide="prev">
-								<span class="glyphicon glyphicon-chevron-left"></span>
-							</a>
-							<a class="right carousel-control" href="#portfolioCarousel" data-slide="next">
-								<span class="glyphicon glyphicon-chevron-right"></span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<footer class="page-footer text-center">Page Created by Mark Otterson
-	</footer>
-</body>
+        //-----------------------------------------------------------------------------------
+
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center:{
+                    lat: 41.4132, 
+                    lng: -82.0738},
+                zoom: 15,
+                mapTypeId: 'satellite'
+            });
+        }
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+                                    'Error: The Geolocation service failed.' :
+                                    'Error: Your browser doesn\'t support geolocation.');
+            infoWindow.open(map);
+        }
+
+        function getUserLocation(gmap) {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var point = new google.maps.LatLng(position.coords.latitude,
+                        position.coords.longitude);
+
+                    if (typeof getUserLocation.user_marker == 'undefined') {
+                        getUserLocation.user_marker = new google.maps.Marker({
+                            position:point,
+                            map:map
+                            //icon:'person.png'
+                        });
+                        getUserLocation.user_marker_window = new google.maps.InfoWindow({
+                            content:'You'
+                        });
+
+                        google.maps.event.addListener(getUserLocation.user_marker, 'click', function () {
+                            getUserLocation.user_marker_window.open(getUserLocation.user_marker);
+                        });
+                    }
+                    getUserLocation.user_marker.setPosition(point);
+                });
+            }
+        }
+
+        if (navigator.geolocation) {
+            getUserLocation(map);
+            setInterval(function () {
+                getUserLocation(map);
+            }, 5000);
+        }
+
+    </script>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+    * element that contains the map. */
+    #map {
+        height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+    
 </html>
