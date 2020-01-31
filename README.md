@@ -1,3 +1,4 @@
 # maotterson.github.io
 Original Homepage (since migrated to AWS Elastic Beanstalk)
-visit maotterson.com
+
+New page located at: http://maotterson.com
